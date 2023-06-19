@@ -309,6 +309,10 @@ button:hover {
     border-radius: 30px;
 }
 
+.card-btn button:hover {
+    background-color: #a8bfff;
+}
+
 .card-btn p {
     font-size: 14px;
     font-weight: 500;
