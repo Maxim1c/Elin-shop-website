@@ -57,29 +57,29 @@ body {
 }
 
 .conteiner {
-    max-width: 1480px;
-    height: 100vh;
+    max-width: 1480px;    
     padding: 0 142px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    margin-bottom: 10px;    
 }
 
-footer {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-footer ul li {
+header ul li {
     display: inline-block;
     padding: 15px 20px;
     padding-left: 0;
 }
 
-footer ul li a {
+header ul li a {
     color: #656565;
 }
 
-footer ul li a:hover {
+header ul li a:hover {
     color: #83A5FF;
     transition: 0.3s;
 }
@@ -98,11 +98,13 @@ hr {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
+    width: 100%;    
 }
 
-.logo img {
+.logo {
     width: 98px auto;
+    margin-right: 10px;    
 }
 
 /* Кнопка */
@@ -115,7 +117,9 @@ button {
     height: 46px;
     border-radius: 30px;
     background-color: #83A5FF;
-    cursor: pointer;   
+    cursor: pointer;
+    padding: 10px; 
+    margin-right: 10px;      
 }
 
 button:hover {    
@@ -135,6 +139,17 @@ button:hover {
 }
 
 /* Строка поиска */
+
+.search-catalog-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 46px;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid #83A5FF;    
+}
 
 .search-catalog {
     display: flex;
@@ -192,14 +207,8 @@ button:hover {
 .entrance {
     justify-content: center;
     text-align: center;
-    padding-left: 30px; 
+    padding-left: 20px; 
        
-}
-
-.entrance-left {
-    justify-content: center;
-    text-align: center;
-    padding-left: 0;
 }
 
 .entrance p a:hover {
@@ -220,6 +229,11 @@ button:hover {
     filter: drop-shadow(0px 2px 2px rgba(44, 44, 44, 0.25));
 }
 
+.banner img {
+    cursor: pointer;
+    border-radius: 30px;
+}
+
 /* Категории товаров */
 
 .categories-text p {
@@ -234,12 +248,18 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 30px;
 }
 
 .foto-card {
     width: 290px auto;
     cursor: pointer;       
+}
+
+.foto-card img {
+    width: 290px auto;
+    cursor: pointer;
+    border-radius: 30px;       
 }
 
 .text-card {
@@ -265,13 +285,13 @@ button:hover {
     align-items: center;
     border-radius: 30px;
     border: 1px solid #cecdcd;
-    width: 180px auto;
-    
+    width: 100% auto;    
 }
 
 .foto-img img {
     width: 80% auto;
-    border-radius: 30px;        
+    border-radius: 30px; 
+    cursor: pointer;       
 }
 
 .price {
@@ -317,4 +337,195 @@ button:hover {
     font-size: 14px;
     font-weight: 500;
     color: #ffff;
+}
+
+/* Блок бренды */
+
+.brands {
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+    justify-content: space-between; 
+    width: 100%;          
+}
+
+.brands-logo {
+    transition: transform .3s;     
+}
+
+.brands-logo:hover {
+    transform: scale(1.1)       
+}
+
+.brands-logo img {
+    width: 100% auto;
+    cursor: pointer;     
+}
+
+/* Блок E-mail */
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    margin-top: 50px;
+}
+
+.email p {
+    padding-bottom: 15px;
+    font-size: 14px; 
+    font-weight: 300;   
+}
+
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.text-email {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-email span {
+    color: #292929;
+    font-weight: 400;    
+}
+
+/* Строка введите email */
+
+.search-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    height: 46px;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid #83A5FF;
+    background-color: #ffff;    
+}
+
+.form_input {
+    width: 100%;
+    height: 100%;
+}
+
+.form_input {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+    padding-left: 10px;       
+}
+
+/* Кнопка подписаться */
+
+.search-btn-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    width: 115px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 2px 2px; 
+    background-color: #83A5FF;       
+}
+
+.search-btn-email p {
+    color: #ffff;
+    font-size: 14;    
+    font-weight: 500;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;    
+}
+
+/* Блок Footer */
+
+.contacts-block {
+    display: flex;    
+    justify-content: space-between;
+    width: 100%;
+    height: 190px;
+    background-color: #cecdcd;
+    margin-top: 50px;    
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 20px;    
+
+}
+
+.company h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.company ul li {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.company ul li:hover {
+    color: #292929;
+    cursor: pointer;
+}
+
+.buyer h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.buyer ul li {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.buyer ul li:hover {
+    color: #292929; 
+    cursor: pointer;   
+}
+
+.information h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.information ul li {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.information ul li:hover {
+    color: #292929; 
+    cursor: pointer; 
+}
+
+.telephone h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.telephone ul li {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
 }
